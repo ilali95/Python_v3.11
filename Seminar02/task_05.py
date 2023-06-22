@@ -13,7 +13,7 @@ import cmath
 
 # d = b**2 - 4*a*c
 
-# if d >= 0:
+# if d > 0:
 #     x1 = (-b + cmath.sqrt(d)) / (2*a)
 #     x2 = (-b - cmath.sqrt(d)) / (2*a)
 #     print("Корни уравнения:", x1, x2)
