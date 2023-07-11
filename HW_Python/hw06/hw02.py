@@ -6,14 +6,21 @@
 # Программа получает на вход восемь пар чисел, каждое число от 1 до 8 - координаты 8 ферзей.
 # Если ферзи не бьют друг друга верните истину, а если бьют - ложь.
 
-def eight_queens(queens):
+def is_valid(board):
     for i in range(8):
         for j in range(i + 1, 8):
-            if queens[i][0] == queens[j][0] or queens[i][1] == queens[j][1] or abs(queens[i][0] - queens[j][0]) == abs(queens[i][1] - queens[j][1]):
+            if board[i] == board[j] or abs(board[i] - board[j]) == j - i:
                 return False
     return True
 
+def eight_queens():
+    import random
+    solutions = []
+    while len(solutions) < 4:
+        board = random.sample(range(8), 8)
+        if is_valid(board):
+            solutions.append(board)
+    for solution in solutions:
+        print(solution)
 
-queens = [(1, 1), (2, 3), (3, 5), (4, 7), (5, 2), (6, 4), (7, 6), (8, 8)]
-result = eight_queens(queens)
-print(result)
+eight_queens()
