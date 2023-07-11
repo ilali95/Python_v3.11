@@ -1,5 +1,5 @@
 import argparse
-from hw01 import check_date, check_year
+from HW_Python.hw07.hw01 import check_date, check_year
 from hw02 import eight_queens
 
 

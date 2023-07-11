@@ -9,9 +9,7 @@ def rename_files_group(desired_name, num_digits, source_extension, target_extens
         original_name = file[:name_range[0]-1] + desired_name + str(i+1).zfill(num_digits) + target_extension
         original_path = os.path.join(directory, file)
         new_path = os.path.join(directory, original_name)
-
         os.rename(original_path, new_path)
-
         print(f"Переименован файл {file} в {original_name}")
 
 
