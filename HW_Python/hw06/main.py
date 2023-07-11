@@ -1,5 +1,7 @@
 import argparse
 from hw01 import check_date, check_year
+from hw02 import eight_queens
+
 
 # Создаем парсер аргументов командной строки
 parser = argparse.ArgumentParser(description='Проверка даты')
@@ -19,3 +21,5 @@ print(f"Високосный год: {is_leap_year}")
 # Проверяем дату
 is_valid_date = check_date(date_to_check)
 print(f"Действительна дата: {is_valid_date}")
+
+eight_queens()

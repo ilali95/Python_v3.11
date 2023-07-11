@@ -5,22 +5,23 @@
 # определите, есть ли среди них пара бьющих друг друга. 
 # Программа получает на вход восемь пар чисел, каждое число от 1 до 8 - координаты 8 ферзей.
 # Если ферзи не бьют друг друга верните истину, а если бьют - ложь.
+__all__ = ['eight_queens']
 
-def is_valid(board):
-    for i in range(8):
-        for j in range(i + 1, 8):
-            if board[i] == board[j] or abs(board[i] - board[j]) == j - i:
-                return False
-    return True
+import random
 
 def eight_queens():
-    import random
+    def is_valid(board):
+        for i in range(8):
+            for j in range(i + 1, 8):
+                if board[i] == board[j] or abs(board[i] - board[j]) == j - i:
+                    return False
+        return True
+
     solutions = []
     while len(solutions) < 4:
         board = random.sample(range(8), 8)
         if is_valid(board):
             solutions.append(board)
-    for solution in solutions:
-        print(solution)
+    return solutions
 
-eight_queens()
+print(eight_queens())
