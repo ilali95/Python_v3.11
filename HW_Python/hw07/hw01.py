@@ -1,16 +1,18 @@
 import os
 
-def rename_files_group(desired_name, num_digits, source_extension, target_extension, name_range):
-    directory = os.getcwd()
 
-    files = [file for file in os.listdir(directory) if file.endswith(source_extension)]
-
-    for i, file in enumerate(files):
-        original_name = file[:name_range[0]-1] + desired_name + str(i+1).zfill(num_digits) + target_extension
-        original_path = os.path.join(directory, file)
-        new_path = os.path.join(directory, original_name)
-        os.rename(original_path, new_path)
-        print(f"Переименован файл {file} в {original_name}")
+__all__ = ['group_rename_files']
 
 
-rename_files_group("new_name", 3, ".txt", ".docx", [3, 6])
+def group_rename_files(directory, desired_name, num_digits, source_extension, target_extension, name_range):
+    file_counter = 1
+    name_start, name_end = name_range
+
+    for filename in os.listdir(directory):
+        if filename.endswith(source_extension):
+            source_path = os.path.join(directory, filename)
+            original_name = filename[name_start-1:name_end]
+            new_filename = original_name + desired_name + str(file_counter).zfill(num_digits) + target_extension
+            new_path = os.path.join(directory, new_filename)
+            os.rename(source_path, new_path)
+            file_counter += 1
