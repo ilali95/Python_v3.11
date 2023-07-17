@@ -1,1 +1,194 @@
-[]
+[
+    {
+        "path": "HW_Python\\hw_01.py",
+        "type": "file",
+        "size": 3471,
+        "parent_directory": "HW_Python"
+    },
+    {
+        "path": "HW_Python\\hw02",
+        "type": "directory",
+        "size": 2450,
+        "parent_directory": "HW_Python"
+    },
+    {
+        "path": "HW_Python\\hw03",
+        "type": "directory",
+        "size": 4547,
+        "parent_directory": "HW_Python"
+    },
+    {
+        "path": "HW_Python\\hw04",
+        "type": "directory",
+        "size": 1655,
+        "parent_directory": "HW_Python"
+    },
+    {
+        "path": "HW_Python\\hw05",
+        "type": "directory",
+        "size": 2222,
+        "parent_directory": "HW_Python"
+    },
+    {
+        "path": "HW_Python\\hw06",
+        "type": "directory",
+        "size": 4382,
+        "parent_directory": "HW_Python"
+    },
+    {
+        "path": "HW_Python\\hw07",
+        "type": "directory",
+        "size": 1705,
+        "parent_directory": "HW_Python"
+    },
+    {
+        "path": "HW_Python\\hw08",
+        "type": "directory",
+        "size": 2839,
+        "parent_directory": "HW_Python"
+    },
+    {
+        "path": "HW_Python\\hw02\\hw_01.py",
+        "type": "file",
+        "size": 630,
+        "parent_directory": "HW_Python\\hw02"
+    },
+    {
+        "path": "HW_Python\\hw02\\hw_02.py",
+        "type": "file",
+        "size": 1820,
+        "parent_directory": "HW_Python\\hw02"
+    },
+    {
+        "path": "HW_Python\\hw03\\hw01.py",
+        "type": "file",
+        "size": 600,
+        "parent_directory": "HW_Python\\hw03"
+    },
+    {
+        "path": "HW_Python\\hw03\\hw02.py",
+        "type": "file",
+        "size": 2277,
+        "parent_directory": "HW_Python\\hw03"
+    },
+    {
+        "path": "HW_Python\\hw03\\hw03.py",
+        "type": "file",
+        "size": 1670,
+        "parent_directory": "HW_Python\\hw03"
+    },
+    {
+        "path": "HW_Python\\hw04\\hw01.py",
+        "type": "file",
+        "size": 488,
+        "parent_directory": "HW_Python\\hw04"
+    },
+    {
+        "path": "HW_Python\\hw04\\hw02.py",
+        "type": "file",
+        "size": 805,
+        "parent_directory": "HW_Python\\hw04"
+    },
+    {
+        "path": "HW_Python\\hw04\\hw03.py",
+        "type": "file",
+        "size": 362,
+        "parent_directory": "HW_Python\\hw04"
+    },
+    {
+        "path": "HW_Python\\hw05\\hw01.py",
+        "type": "file",
+        "size": 907,
+        "parent_directory": "HW_Python\\hw05"
+    },
+    {
+        "path": "HW_Python\\hw05\\hw02.py",
+        "type": "file",
+        "size": 872,
+        "parent_directory": "HW_Python\\hw05"
+    },
+    {
+        "path": "HW_Python\\hw05\\hw03.py",
+        "type": "file",
+        "size": 443,
+        "parent_directory": "HW_Python\\hw05"
+    },
+    {
+        "path": "HW_Python\\hw06\\hw01.py",
+        "type": "file",
+        "size": 998,
+        "parent_directory": "HW_Python\\hw06"
+    },
+    {
+        "path": "HW_Python\\hw06\\hw02.py",
+        "type": "file",
+        "size": 1329,
+        "parent_directory": "HW_Python\\hw06"
+    },
+    {
+        "path": "HW_Python\\hw06\\main.py",
+        "type": "file",
+        "size": 877,
+        "parent_directory": "HW_Python\\hw06"
+    },
+    {
+        "path": "HW_Python\\hw06\\__init__.py",
+        "type": "file",
+        "size": 64,
+        "parent_directory": "HW_Python\\hw06"
+    },
+    {
+        "path": "HW_Python\\hw06\\__pycache__",
+        "type": "directory",
+        "size": 1114,
+        "parent_directory": "HW_Python\\hw06"
+    },
+    {
+        "path": "HW_Python\\hw06\\__pycache__\\hw01.cpython-310.pyc",
+        "type": "file",
+        "size": 904,
+        "parent_directory": "HW_Python\\hw06\\__pycache__"
+    },
+    {
+        "path": "HW_Python\\hw06\\__pycache__\\__init__.cpython-310.pyc",
+        "type": "file",
+        "size": 210,
+        "parent_directory": "HW_Python\\hw06\\__pycache__"
+    },
+    {
+        "path": "HW_Python\\hw07\\hw01.py",
+        "type": "file",
+        "size": 692,
+        "parent_directory": "HW_Python\\hw07"
+    },
+    {
+        "path": "HW_Python\\hw07\\other_utils.py",
+        "type": "file",
+        "size": 294,
+        "parent_directory": "HW_Python\\hw07"
+    },
+    {
+        "path": "HW_Python\\hw07\\__init__.py",
+        "type": "file",
+        "size": 42,
+        "parent_directory": "HW_Python\\hw07"
+    },
+    {
+        "path": "HW_Python\\hw07\\__pycache__",
+        "type": "directory",
+        "size": 677,
+        "parent_directory": "HW_Python\\hw07"
+    },
+    {
+        "path": "HW_Python\\hw07\\__pycache__\\hw01.cpython-310.pyc",
+        "type": "file",
+        "size": 677,
+        "parent_directory": "HW_Python\\hw07\\__pycache__"
+    },
+    {
+        "path": "HW_Python\\hw08\\hw01.py",
+        "type": "file",
+        "size": 2839,
+        "parent_directory": "HW_Python\\hw08"
+    }
+]

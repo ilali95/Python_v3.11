@@ -69,6 +69,6 @@ def get_directory_size(directory):
     return total_size
 
 
-directory = 'Python\HW_Python'
+directory = 'HW_Python'
 total_size = traverse_directory(directory)
 print(f"Total size: {total_size} bytes")
