@@ -42,16 +42,6 @@ class Matrix:
         :type other: Matrix
         :return: True, если матрицы равны, иначе False.
         :rtype: bool
-        """
-
-    def __eq__(self, other):
-        """
-        Проверяет, равны ли две матрицы.
-
-        :param other: Другая матрица, с которой происходит сравнение.
-        :type other: Matrix
-        :return: True, если матрицы равны, иначе False.
-        :rtype: bool
         :raises ValueError: Если матрицы имеют разные размеры.
         """
         if self.rows != other.rows or self.columns != other.columns:
