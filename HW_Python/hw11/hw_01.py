@@ -8,7 +8,7 @@ class Matrix:
     """
     Класс Matrix представляет собой матрицу с базовыми операциями сложения, умножения и сравнения.
     """
-    
+
     def __init__(self, rows, columns):
         """
         Инициализирует объект матрицы с заданным количеством строк и столбцов.
@@ -42,14 +42,21 @@ class Matrix:
         :type other: Matrix
         :return: True, если матрицы равны, иначе False.
         :rtype: bool
+        """
+
+    def __eq__(self, other):
+        """
+        Проверяет, равны ли две матрицы.
+
+        :param other: Другая матрица, с которой происходит сравнение.
+        :type other: Matrix
+        :return: True, если матрицы равны, иначе False.
+        :rtype: bool
         :raises ValueError: Если матрицы имеют разные размеры.
         """
         if self.rows != other.rows or self.columns != other.columns:
-            raise ValueError("Матрицы должны иметь одинаковый размер для сравнения")
-        for i in range(self.rows):
-            for j in range(self.columns):
-                if self.data[i][j] != other.data[i][j]:
-                    return False
+            raise ValueError(
+                "Матрицы должны иметь одинаковый размер для сравнения")
         return True
 
     def __add__(self, other):
@@ -63,8 +70,9 @@ class Matrix:
         :raises ValueError: Если матрицы имеют разные размеры.
         """
         if self.rows != other.rows or self.columns != other.columns:
-            raise ValueError("Матрицы должны иметь одинаковый размер для сложения")
-        
+            raise ValueError(
+                "Матрицы должны иметь одинаковый размер для сложения")
+
         result = Matrix(self.rows, self.columns)
         for i in range(self.rows):
             for j in range(self.columns):
@@ -82,8 +90,9 @@ class Matrix:
         :raises ValueError: Если количество столбцов в первой матрице не равно количеству строк во второй матрице.
         """
         if self.columns != other.rows:
-            raise ValueError("Количество столбцов в первой матрице должно быть равно количеству строк во второй матрице")
-        
+            raise ValueError(
+                "Количество столбцов в первой матрице должно быть равно количеству строк во второй матрице")
+
         result = Matrix(self.rows, other.columns)
         for i in range(self.rows):
             for j in range(other.columns):
@@ -91,7 +100,7 @@ class Matrix:
                     result.data[i][j] += self.data[i][k] * other.data[k][j]
         return result
 
-# Пример использования
+
 matrix1 = Matrix(2, 2)
 matrix1.data = [[1, 2], [3, 4]]
 
@@ -119,8 +128,8 @@ except ValueError as e:
     print("Ошибка:", e)
 
 
-help(Matrix)
-help(Matrix.__str__)
-help(Matrix.__eq__)
-help(Matrix.__add__)
-help(Matrix.__mul__)
+# help(Matrix)
+# help(Matrix.__str__)
+# help(Matrix.__eq__)
+# help(Matrix.__add__)
+# help(Matrix.__mul__)
